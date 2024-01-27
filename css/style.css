@@ -1,0 +1,164 @@
+@import url('https://fonts.cdnfonts.com/css/share-tech-mono');
+@import url('https://fonts.cdnfonts.com/css/brittney-signature');
+@import url('https://fonts.cdnfonts.com/css/drugs');
+@import url('https://fonts.cdnfonts.com/css/pill-gothic-600mg');
+/*
+font-family: 'Drugs', sans-serif;
+*/
+
+body{
+    font-family: 'Pill Gothic 600mg', sans-serif;
+    user-select: none !important;
+    height: 100%;
+    font-size: 20px;
+}
+.background{
+    background-image:url("../img/pink.png");
+    background-size: cover;
+    background-position: center bottom;
+    background-attachment: fixed; 
+    height: 100vh;
+}
+.background *{
+    max-width: 900px;
+}
+.btn-outline-pink{
+    color: #efa0ab;
+    border-color: #efa0ab;
+}
+
+.btn-outline-secondary{
+    color: #6c757dc3;
+    border-color: #6c757dc3;
+}
+.btn-outline-pink:hover{
+    color: white;
+    background-color:#efa0ab;
+}
+.header{
+    display: flex;
+    height: 70px;
+    align-items: end;
+    justify-content: center;
+}
+span.share-Tech{
+    font-family: 'Share Tech Mono', sans-serif;
+    color: #efa0ab;
+    font-size: 100px;
+    text-shadow:5px 0 3px rgba(185, 185, 185, 0.38);
+}
+span.brittney-Signature{
+    font-family: 'Brittney Signature', sans-serif;
+    color: #6c757dc3;
+    font-size: 50px;
+}
+.myname{
+    font-family: 'Brittney Signature', sans-serif;
+    color: #ffffff;
+    font-size: 28px;
+    padding: 30px;
+}
+.text-secondary{
+    color: #8d99a4;
+    border-color: #8d99a4;
+}
+.text-pink{
+    color: #efa0ab;
+    border-color: #efa0ab;
+}
+.filters span:hover{
+    color: #8d99a4 !important;
+    border-bottom:2px solid #8d99a4;
+}
+.filters span.active{
+    color: #efa0ab !important;
+    font-size: 19px;
+    border-bottom:2px solid #efa0ab;
+}
+span.active{
+    color: #efa0ab !important;
+    border-bottom:2px solid #efa0ab;
+}
+.filters span{
+   margin: 5px;
+   color: #8d99a4;
+}
+ul li.list-group-item{
+    margin: 10px 0;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.478);
+    color: #8d99a4;
+    border: 1px solid #6c757d74 !important;
+}
+ul li.list-group-item:hover{
+    box-shadow: 5px 5px 5px #6c757d57;
+    padding: 18px 18px !important;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.editOrDelete{
+    display: none;
+}
+li.task:hover div .editOrDelete{
+    display: block;
+}
+.editOrDelete.active {
+    display: block;
+}
+.editOrDelete.active .editTask{
+    color: white;
+    background-color:#efa0ab;
+}
+
+div.overflow-auto{
+    height: 570px !important;
+}
+div.task-content.uncompleted {
+    text-decoration: line-through;
+    color: #efa0ab !important;
+ }
+ i.fa-check{
+    background-color: #efa0ab;
+    color: white;
+    border-color: #efa0ab !important;
+ }
+ i.fa-exclamation{
+    background-color: #efa0ab;
+    color: white;
+    border-color: #efa0ab !important;
+    width: 25px;
+ }
+ i.fa-x{
+    background-color: white;
+    color: #efa0ab;
+    border-color: #efa0ab !important;
+ }
+ .errormessage {
+    color: #efa0ab;
+ }
+ .d-visible {
+    visibility: hidden;
+ }
+
+ @media (max-width: 600px) { 
+     .task-content {
+        padding-left: 30px;
+     }
+     .editOrDelete{
+        display: block;
+    }
+}
+ @media (min-width: 1300px) { 
+    .background{
+        background-position: bottom center;
+    }
+}
+#btnClear.disabled{
+    border: none
+}
+
+
+
+
+
