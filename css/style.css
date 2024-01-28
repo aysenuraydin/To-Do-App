@@ -114,7 +114,7 @@ li.task:hover div .editOrDelete{
 div.overflow-auto{
     height: 570px !important;
 }
-div.task-content.uncompleted {
+div.task-content.completed {
     text-decoration: line-through;
     color: #efa0ab !important;
  }

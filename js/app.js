@@ -57,7 +57,7 @@ function listTask(filter){
         ul.insertAdjacentHTML("afterbegin", li);
     }else {
             gorevListesiFilter.forEach((task) => {
-                let icon = (task.durum=="completed")? "fa-x" : "fa-check";
+                let icon = (task.durum=="completed")? "fa-check" : "fa-x";
                 let li =`
                      <li class="task list-group-item border-0 rounded-3 p-3" onclick="editStatus(${task.id})" id="${task.id}">
                         <div class="row d-flex align-items-center">
@@ -90,7 +90,7 @@ function newTask(e) {
        if(!isEditMode) {
         errormsg.classList.add("d-visible");
         //Add
-        gorevListesi.push({"id": gorevListesi.length+1, "gorevAdi": search.value , "durum":"completed"});
+        gorevListesi.push({"id": gorevListesi.length+1, "gorevAdi": search.value , "durum":"uncompleted"});
        } else {
         //Update
            for(let gorev of gorevListesi) {
